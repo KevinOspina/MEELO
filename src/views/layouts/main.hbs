@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEELO!</title>
+
+    <!--FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/8871342d52.js" crossorigin="anonymous"></script>
+
+    <!--BOOSTRAP -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/public/img/melo2.png" alt="MEELO!">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Inicio </font>
+                            </font><span class="sr-only">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">(actual)</font>
+                                </font>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Login</font>
+                            </font>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Sign in</font>
+                            </font>
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search: '#naturaleza...'">
+                </form>
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Buscar</font>
+                    </font>
+                </button>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+
+            <div class="col-md-8">
+                {{{ body }}}
+
+            </div>
+
+            <div class="col-md-4">
+                {{> stats}}
+                {{> popular}}
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+    <!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+     <!--Code-->
+<script src="/public/js/scripts.js">
+
+</script>
+</html>
