@@ -18,7 +18,7 @@ client.connect(err => {
 
 
 
-mongoose.connect('mongodb+srv://kevin:nacional3@cluster0-yrw8e.mongodb.net/test?retryWrites=true&w=majority')
+mongoose.connect('mongodb://kevin:nacional3@cluster0-yrw8e.mongodb.net/test?retryWrites=true&w=majority')
 //mongoose.connect(database.URI)
     .then(db=> console.log('db connected'))
     .catch(err => console.error(err))
