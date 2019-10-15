@@ -11,26 +11,26 @@ async function commentCounter() {
 }
 
 async function imageTotalViewCounter() {
-    const result = await Image.aggregate([{
+   /* const result = await Image.aggregate([{
         $group: {
             _id: '1',
             viewsTotal: { $sum: '$views' }
         }
     }])
     
-    return result[0].viewsTotal //columna 0
+    return result[0].viewsTotal //columna 0*/
 
 }
 
 async function likesTotalCounter() {
-    const result = await Image.aggregate([{
+    /*const result = await Image.aggregate([{
         $group: {
             _id: '1',
             likesTotal: { $sum: '$likes' }
         }
     }])
     
-    return result[0].likesTotal //columna 0
+    return result[0].likesTotal //columna 0*/
 
 }
 
